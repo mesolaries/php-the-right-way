@@ -1,25 +1,25 @@
-# Welcome
+# Xoş gəlmişsiniz
 
-There's a lot of outdated information on the Web that leads new PHP users astray,
-propagating bad practices and insecure code. _PHP: The Right Way_ is an easy-to-read,
-quick reference for PHP popular coding standards, links to authoritative tutorials
-around the Web and what the contributors consider to be best practices at the present
-time.
+İnternetdə yeni PHP istifadəçilərini yoldan çıxaran, pis təcrübələri və etibarsız kodları 
+təbliğ edən bir çox köhnəlmiş məlumatlar var. _PHP: Doğru Yol_, PHP-nin populyar kodlaşdırma 
+standartları, İnternetdə olan nüfuzlu təlimlərə keçidlər və indiki zamanda istifadəçilər 
+tərəfindən ən yaxşı hesab edilən təcrübələr üçün oxunması asan, sürətli bir istinaddır.
 
-_There is no canonical way to use PHP_. This website aims to introduce new PHP
-developers to some topics which they may not discover until it is too late, and aims
-to give seasoned pros some fresh ideas on those topics they've been doing for years
-without ever reconsidering. This website will also not tell you which tools to use, but
-instead offer suggestions for multiple options, when possible explaining the differences
-in approach and use-case.
+_PHP-dən istifadə etməyin kanonik bir yolu yoxdur_. Bu veb-sayt yeni PHP proqramçılarını 
+başa düşmədikləri bəzi mövzularla çox gec olmadan tanış etməyi, təcrübəli 
+mütəxəssislərə isə illərdir məşğul olduqları və heç vaxt təkrarlamadıqları mövzularda yeni 
+ideyalar verməyi hədəfləyir. Həmçinin bu veb-sayt sizə hansı alətlərdən istifadə etmək 
+lazım olduğunu bildirmək əvəzinə, yanaşmalarda və istifadə hallarında
+olan fərqləri mümkün olduqca izah etməklə bir neçə variant təqdim edəcəkdir.
 
-This is a living document and will continue to be updated with more helpful information
-and examples as they become available.
+Bu canlı bir sənəddir. Faydalı məlumatlar və nümunələr mövcud olduqda yenilənməyə
+davam edəcəkdir.
 
-## Translations
+## Tərcümələr
 
-_PHP: The Right Way_ is translated into many different languages:
+_PHP: Doğru Yol_ müxtəlif dillərə tərcümə olunmuşdur:
 
+* [Azərbaycan dili](https://mesolaries.github.io/php-the-right-way)
 * [English](http://www.phptherightway.com)
 * [Español](http://phpdevenezuela.github.io/php-the-right-way)
 * [Français](http://eilgin.github.io/php-the-right-way/)
@@ -42,13 +42,13 @@ _PHP: The Right Way_ is translated into many different languages:
 * [简体中文](https://laravel-china.github.io/php-the-right-way/)
 * [繁體中文](https://laravel-taiwan.github.io/php-the-right-way)
 
-## Book
+## Kitab
 
-The most recent version of _PHP: The Right Way_ is also available in PDF, EPUB and MOBI formats. [Go to Leanpub][1]
+_PHP: Doğru Yol_ kitabının ingiliscə ən son versiyası PDF, EPUB və MOBI formatlarında da mövcuddur. [Leanpub-a keç][1]
 
-## How to Contribute
+## Necə töhfə vermək olar
 
-Help make this website the best resource for new PHP programmers! [Contribute on GitHub][2]
+Bu veb-saytın yeni PHP proqramçıları üçün ən yaxşı mənbə olmasına kömək edin! [GitHub-da töhfə ver][2]
 
 [1]: https://leanpub.com/phptherightway
 [2]: https://github.com/codeguy/php-the-right-way/tree/gh-pages
