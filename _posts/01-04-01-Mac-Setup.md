@@ -1,63 +1,71 @@
 ---
+title: Mac-da Quraşdırma
 isChild: true
 anchor:  mac_setup
 ---
 
-## Mac Setup {#mac_setup_title}
+## Mac-da Quraşdırma {#mac_setup_title}
 
-macOS comes prepackaged with PHP but it is normally a little behind the latest stable release. There are multiple ways to install the latest PHP version on macOS.
+macOS PHP ilə hazır gəlir. Lakin normal halda ən son stabil versiyadan bir qədər geri olur. 
+Ən son PHP versiyasını macOS-a yükləməyin bir neçə yolu var. 
 
-### Install PHP via Homebrew
+### PHP-ni Homebrew ilə quraşdırmaq
 
-[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4, and PHP 8.0. Install the latest version with this command:
+[Homebrew], macOS üçün PHP və müxtəlif genişləndirmələri asanlıqla quraşdırmağınıza kömək edən bir paket meneceridir. 
+Homebrew-nun əsas repozitoriyası PHP 5.6, 7.0, 7.1, 7.2, 7.3, 7.4 və PHP 8.0 üçün "düsturlar" təqdim edir. 
+Ən son versiyanı bu əmrlə quraşdırın: 
 
 ```
 brew install php@8.0
 ```
 
-You can switch between Homebrew PHP versions by modifying your `PATH` variable. Alternatively, you can use [brew-php-switcher][brew-php-switcher] to switch PHP versions automatically.
+Homebrew PHP versiyaları arasında `PATH` dəyişəninizi redaktə etməklə keçid edə bilərsiniz. 
+Alternativ olaraq PHP versiyalarını avtomatik dəyişmək üçün 
+[brew-php-switcher][brew-php-switcher]-dən istifadə edə bilərsiniz. 
 
-### Install PHP via Macports
+### PHP-ni MacPorts ilə quraşdırmaq
 
-The [MacPorts] Project is an open-source community initiative to design an
-easy-to-use system for compiling, installing, and upgrading either
-command-line, X11 or Aqua based open-source software on the OS X operating
-system.
+The [MacPorts] Project - OS X əməliyyat sistemində əmr sətri, X11 və ya Aqua əsaslı 
+açıq mənbəli proqramların kompilyasiyası, quraşdırılması və təkmilləşdirilməsi üçün 
+istifadəsi asan bir sistem hazırlamaq üçün açıq mənbə ictimaiyyətinin bir təşəbbüsüdür. 
 
-MacPorts supports pre-compiled binaries, so you don't need to recompile every
-dependency from the source tarball files, it saves your life if you don't
-have any package installed on your system.
+MacPorts əvvəldən kompilyasiya edilmiş ikili faylları dəstəkləyir. 
+Beləliklə, mənbə tarball fayllarından bütün asılılıqları yenidən kompilyasiya etməyə ehiyac qalmır. 
+Əgər sisteminizdə heç bir paket quraşdırılmayıbsa, bu sizin həyatınızı xilas edəcək. 
 
-At this point, you can install `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73`, `php74` or `php80` using the `port install` command, for example:
+Bu baxımdan siz `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73`, `php74` və ya `php80`-i `port install` 
+əmrindən istifadə edərək quraşdıra bilərsiniz. Məsələn: 
 
     sudo port install php74
     sudo port install php80
 
-And you can run `select` command to switch your active PHP:
+Aktiv PHP-yə keçmək üçün isə `select` əmrini işə sala bilərsiniz: 
 
     sudo port select --set php php80
 
-### Install PHP via phpbrew
+### PHP-ni phpbrew ilə quraşdırmaq
 
-[phpbrew] is a tool for installing and managing multiple PHP versions. This can be really useful if two different
-applications/projects require different versions of PHP, and you are not using virtual machines.
+[phpbrew] bir neçə PHP versiyasını quraşdırmaq və idarə etmək üçün bir alətdir. İki fərqli tətbiq/layihə üçün fərqli
+PHP versiyaları lazımdırsa və virtual maşınlardan istifadə etmirsinizsə, bu, həqiqətən də faydalı ola bilər. 
 
-### Install PHP via Liip's binary installer
+### PHP-ni Liip ikili quraşdırıcısı ilə quraşdırın
 
-Another popular option is [php-osx.liip.ch] which provides one liner installation methods for versions 5.3 through 7.3.
-It doesn't overwrite the PHP binaries installed by Apple, but installs everything in a separate location (/usr/local/php5).
+Digər bir populyar seçim, 5.3-dən 7.3-dək versiyalar üçün bir sətirdə quraşdırma üsulları təqdim edən [php-osx.liip.ch]-dır.
+O, PHP-ni Apple tərəfindən quraşdırılmış PHP ikili fayllarının üzərinə deyil, ayrı bir yerə quraşdırır (/usr/local/php5). 
 
-### Compile from Source
+### Mənbədən kompilyasiya edin
 
-Another option that gives you control over the version of PHP you install, is to [compile it yourself][mac-compile].
-In that case be sure to have installed either [Xcode][xcode-gcc-substitution] or Apple's substitute
-["Command Line Tools for XCode"] downloadable from Apple's Mac Developer Center.
+Qurduğunuz PHP versiyasını idarə etməyə imkan verən başqa bir seçim - [özünüz kompilyasiya edin][mac-compile].
+Bu halda [Xcode][xcode-gcc-substitution] -un və ya Apple-ın Mac Developer Center-dən yüklənə bilən 
+əvəzedici ["Command Line Tools for XCode"]-un quraşdırıldığından əmin olun. 
 
-### All-in-One Installers
+### Universal Quraşdırıcılar
 
-The solutions listed above mainly handle PHP itself, and do not supply things like [Apache][apache], [Nginx][nginx] or a SQL server.
-"All-in-one" solutions such as [MAMP][mamp-downloads] and [XAMPP][xampp] will install these other bits of software for
-you and tie them all together, but ease of setup comes with a trade-off of flexibility.
+Yuxarıda sadalanan həllər əsasən PHP-nin özünü idarə edir və [Apache][apache], [Nginx][nginx] və ya 
+SQL server kimi şeyləri təmin etmir. 
+[MAMP][mamp-downloads] və [XAMPP][xampp] kimi universal həllər bu və digər proqram təminatlarını 
+sizin üçün quraşdıracaq və bir-biri ilə əlaqələndirəcək. 
+Lakin quraşdırma asanlığı rahatlığın itirilməsi hesabına başa gəlir. 
 
 [Homebrew]: https://brew.sh/
 [Homebrew PHP]: https://github.com/Homebrew/homebrew-php#installation

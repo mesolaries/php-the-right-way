@@ -1,18 +1,28 @@
 ---
-title:   Common Directory Structure
+title:   Ümumi Kataloq Strukturu
 isChild: true
 anchor:  common_directory_structure
 ---
 
-## Common Directory structure {#common_directory_structure_title}
+## Ümumi Kataloq strukturu {#common_directory_structure_title}
 
-A common question among those starting out with writing programs for the web is, "where do I put my stuff?" Over the years, this answer has consistently been "where the `DocumentRoot` is." Although this answer is not complete, it's a great place to start.
+Veb üçün proqramlar yazmağa başlayanlar arasında ümumi bir sual "fayllarımı hara qoyum?"-dur. 
+Uzun illər ərzində bu sual dəyişilməz olaraq "`DocumentRoot` haradadır?" idi. 
+Bu cavab tam olmasa belə, başlamaq üçün əla bir yerdir. 
 
-For security reasons, configuration files should not be accessible by a site's visitors; therefore, public scripts are kept in a public directory and private configurations and data are kept outside of that directory.
+Təhlükəsizlik səbəbinbən konfiqurasiya faylları saytın ziyarətçilərinə əlçatan olmamalıdır; 
+bu səbəbdən, ümumi skriptlər ictimai (public) kataloqda, özəl (private) konfiqurasiyalar 
+və məlumatlar isə bu kataloqdan kənarda saxlanılır. 
 
-For each team, CMS, or framework one works in, a standard directory structure is used by each of those entities. However, if one is starting a project alone, knowing which filesystem structure to use can be daunting.
+Bir nəfərin işlədiyi komanda, CMS və ya freymvorkun hər birində standart kataloq strukturundan istifadə olunur. 
+Lakin layihəyə tək başlayan biri üçün hansı kataloq strukturundan istifadə etməli olduğunu bilmək çətin ola bilər. 
 
-[Paul M. Jones] has done some fantastic research into common practices of tens of thousands of github projects in the realm of PHP. He has compiled a standard file and directory structure, the [Standard PHP Package Skeleton], based on this research. In this directory structure, `DocumentRoot` should point to `public/`, unit tests should be in the `tests/` directory, and third party libraries, as installed by [composer], belong in the `vendor/` directory. For other files and directories, abiding by the [Standard PHP Package Skeleton] will make the most sense to contributors of a project.
+[Paul M. Jones] PHP aləmində on minlərlə github layihəsinin ümumi təcrübələri üzərində fantastik tədqiqatlar aparmışdır. 
+O, bu tədqiqata əsasən standart fayl və kataloq strukturu - [Standard PHP Package Skeleton] hazırlamışdır. 
+Bu kataloq strukturunda `DocumentRoot` `public/`-ə işarə etməli, modul testləri `tests/`, [composer] tərəfindən 
+quraşdırılmış kənar kitabxanalar isə `vendor/` qovluğunda olmalıdır. 
+Digər fayllar və kataloqlar üçün [Standard PHP Package Skeleton]-nə 
+riayət etmək layihə iştirakçıları üçün ən yaxşı seçim olacaq. 
 
 [Paul M. Jones]: http://paul-m-jones.com/
 [Standard PHP Package Skeleton]: https://github.com/php-pds/skeleton

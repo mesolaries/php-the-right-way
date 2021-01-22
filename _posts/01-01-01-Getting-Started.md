@@ -1,6 +1,7 @@
 ---
+title: Başlanğıc
 anchor: getting_started
 ---
 
-# Getting Started {#getting_started_title}
+# Başlanğıc {#getting_started_title}
 
