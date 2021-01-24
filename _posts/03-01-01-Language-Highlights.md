@@ -1,5 +1,6 @@
 ---
+title: Dilin Xüsusiyyətləri
 anchor: language_highlights
 ---
 
-# Language Highlights {#language_highlights_title}
+# Dilin Xüsusiyyətləri {#language_highlights_title}

@@ -1,28 +1,32 @@
 ---
+title: Əmr Sətri İnterfeysi
 isChild: true
 anchor:  command_line_interface
 ---
 
-## Command Line Interface {#command_line_interface_title}
+## Əmr Sətri İnterfeysi {#command_line_interface_title}
 
-PHP was created to write web applications, but is also useful for scripting command line interface (CLI) programs.
-Command line PHP programs can help automate common tasks like testing, deployment, and application administration.
+PHP-nin veb tətbiqetmələr yazmaq üçün yaradılmasına baxmayaraq, o, əmr sətri interfeysi (Command Line Interface - CLI) 
+proqramlarının yazılması üçün də faydalıdır. Əmr sətri PHP proqramları test, yerləşdirmə və tətbiqetmənin idarə olunması 
+kimi ümumi tapşırıqları avtomatlaşdırmağa kömək edə bilər. 
 
-CLI PHP programs are powerful because you can use your app's code directly without having to create and secure a web
-GUI for it. Just be sure **not** to put your CLI PHP scripts in your public web root!
+CLI PHP proqramları güclüdür. Çünki siz proqramınızın kodunu onun üçün veb-interfeys 
+yaratmadan və qorumadan birbaşa istifadə edə bilərsiniz. Sadəcə olaraq CLI PHP skriptlərinizi 
+ümumi kök direktoriyasına **yerləşdirmədiyinizdən** əmin olun! 
 
-Try running PHP from your command line:
+PHP-ni əmr sətrinizdən işə salmağa çalışın: 
 
 {% highlight console %}
 > php -i
 {% endhighlight %}
 
-The `-i` option will print your PHP configuration just like the [`phpinfo()`][phpinfo] function.
+`-i` seçimi PHP konfiqurasiyanızı eynilə [`phpinfo()`][phpinfo] funksiyası kimi çap edəcəkdir. 
 
-The `-a` option provides an interactive shell, similar to ruby's IRB or python's interactive shell. There are a number
-of other useful [command line options][cli-options], too.
+`-a` seçimi ruby IRB-nin və ya python-nun interaktiv örtüyünə bənzər bir interaktiv örtük təmin edir. Bir sıra digər 
+faydalı [əmr sətri seçimləri][cli-options] də var. 
 
-Let's write a simple "Hello, $name" CLI program. To try it out, create a file named `hello.php`, as below.
+Gəlin sadə bir "Hello, $name" CLI proqramı yazaq. Sınamaq üçün aşağıda göstərildiyi kimi `hello.php` 
+adlı bir fayl yaradın. 
 
 {% highlight php %}
 <?php
@@ -34,14 +38,14 @@ $name = $argv[1];
 echo "Hello, $name\n";
 {% endhighlight %}
 
-PHP sets up two special variables based on the arguments your script is run with. [`$argc`][argc] is an integer
-variable containing the argument *count* and [`$argv`][argv] is an array variable containing each argument's *value*.
-The first argument is always the name of your PHP script file, in this case `hello.php`.
+PHP skriptinizin işlədiyi arqumentlərə əsasən iki xüsusi dəyişən qurur. [`$argc`][argc] arqument *sayını* ehtiva edən 
+tam ədəd (integer) dəyişəni, [`$argv`][argv] isə hər bir arqumentin *dəyərini* ehtiva edən bir massiv (array) dəyişənidir. 
+İlk arqument həmişə PHP skript faylınızın adıdır. İndiki halda `hello.php`. 
 
-The `exit()` expression is used with a non-zero number to let the shell know that the command failed. Commonly used
-exit codes can be found [here][exit-codes].
+`exit()` ifadəsi əmrinizin uğursuz sonlandığını örtüyə bildirmək üçün sıfır olmayan bir rəqəmlə istifadə olunur. 
+Tez-tez istifadə olunan çıxış kodlarına [burada][exit-codes] baxmaq olar. 
 
-To run our script, above, from the command line:
+Əmr sətrindən yuxarıdakı skriptimizi çalışdırmaq üçün:
 
 {% highlight console %}
 > php hello.php
@@ -51,7 +55,7 @@ Hello, world
 {% endhighlight %}
 
 
- * [Learn about running PHP from the command line][php-cli]
+ * [PHP-ni əmr sətrindən işə salmaq haqqında öyrən][php-cli]
 
 [phpinfo]: https://secure.php.net/function.phpinfo
 [cli-options]: https://secure.php.net/features.commandline.options

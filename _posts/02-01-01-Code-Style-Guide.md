@@ -1,61 +1,63 @@
 ---
+title: Kod Üslubu Bələdçisi
 anchor: code_style_guide
 ---
 
-# Code Style Guide {#code_style_guide_title}
+# Kod Üslubu Bələdçisi {#code_style_guide_title}
 
-The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for
-PHP developers to choose several of these and combine them into a single project. It is important that PHP code adhere
-(as close as possible) to a common code style to make it easy for developers to mix and match various libraries for
-their projects.
+PHP ictimaiyyəti saysız-hesabsız kitabxanalardan, freymvorklərdən və komponentlərdən ibarət olub, böyük və müxtəlifdir. 
+PHP proqramçılarının bunlardan bir neçəsini seçərək tək bir layihədə birləşdirməsi adi bir haldır. 
+Proqramçıların layihələr üçün müxtəlif kitabxanaları qarışdırıb, onları bir-birinə uyğunlaşdırmasını 
+asanlaşdırmaq üçün PHP kodunun ümumi bir kod üslubunda olması vacibdir. 
 
-The [Framework Interop Group][fig] has proposed and approved a series of style recommendations. Not all of them related
-to code-style, but those that do are [PSR-1][psr1], [PSR-12][psr12] and [PSR-4][psr4]. These
-recommendations are merely a set of rules that many projects like Drupal, Zend, Symfony, Laravel, CakePHP, phpBB, AWS SDK,
-FuelPHP, Lithium, etc are adopting. You can use them for your own projects, or continue to use your own
-personal style.
+[Framework Interop Group][fig] bir sıra üslub tövsiyələri təklif və təsdiq etmişdir. 
+Bunlardan kod üslubuna aid olanlar [PSR-1][psr1], [PSR-12][psr12] və [PSR-4][psr4]-dür. Bu tövsiyələr sadəcə olaraq 
+Drupal, Zend, Symfony, Laravel, CakePHP, phpBB, AWS SDK, FuelPHP, Lithium və s. kimi bir çox layihələrin qəbul etdiyi 
+bir sıra qaydalardan ibarətdir. Onları layihələrinizdə istifadə edə və ya öz şəxsi üslubunuzdan istifadə etməyə 
+davam edə bilərsiniz. 
 
-Ideally, you should write PHP code that adheres to a known standard. This could be any combination of PSRs, or one
-of the coding standards made by PEAR or Zend. This means other developers can easily read and work with your code, and
-applications that implement the components can have consistency even when working with lots of third-party code.
+İdeal olaraq, yazdığınız PHP kod hər hansı bir tanınmış standarta riayət etməlidir. Bu PSR-lardan hər hansı biri və ya 
+PEAR və ya Zend tərəfindən hazırlanmış kodlaşdırma standartlarından biri ola bilər. Bu o deməkdir ki, digər proqramçılar 
+kodunuzu asanlıqla oxuya və onunla işləyə, müxtəlif komponentlərdən ibarət tətbiqetmələr isə çox sayda kənar kodlarla 
+işləsər belə onlar arasında daha çox uyğunluq əldə edilə bilər. 
 
-* [Read about PSR-1][psr1]
-* [Read about PSR-12][psr12]
-* [Read about PSR-4][psr4]
-* [Read about PEAR Coding Standards][pear-cs]
-* [Read about Symfony Coding Standards][symfony-cs]
+* [PSR-1 haqqında oxu][psr1]
+* [PSR-12 haqqında oxu][psr12]
+* [PSR-4 haqqında oxu][psr4]
+* [PEAR Coding Standards haqqında oxu][pear-cs]
+* [Symfony Coding Standards haqqında oxu][symfony-cs]
 
-You can use [PHP_CodeSniffer][phpcs] to check code against any one of these recommendations, and plugins for text
-editors like [Sublime Text][st-cs] to be given real-time feedback.
+Kodunuzun bu tövsiyələrdən hər hansı biri ilə uyğunluğunu yoxlamaq üçün [PHP_CodeSniffer][phpcs]-dən istifadə edə bilərsiniz. 
+[Sublime Text][st-cs] kimi mətn redaktorları isə sizə plaginlər vasitəsilə real zamanda məlumat verəcək. 
 
-You can fix the code layout automatically by using one of the following tools:
+Aşağıdakı alətlərdən birini istifadə edərək kod üslubunu avtomatik olaraq düzəldə bilərsiniz: 
 
-- One is the [PHP Coding Standards Fixer][phpcsfixer] which has a very well tested codebase.
-- Also, the [PHP Code Beautifier and Fixer][phpcbf] tool which is included with PHP_CodeSniffer can be used to adjust your code accordingly.
+- Bunlardan biri, çox yaxşı sınaqdan keçmiş kod bazasına malik olan [PHP Coding Standards Fixer][phpcsfixer]-dir. 
+- Bundan başqa, PHP_CodeSniffer-ə daxil olan [PHP Code Beautifier and Fixer][phpcbf] kodunuzda müvafiq düzəlişlər etmək üçün istifadə edilə bilər. 
 
-And you can run phpcs manually from shell:
+phpcs-i əmr sətrindən işə sala bilərsiniz: 
 
     phpcs -sw --standard=PSR1 file.php
 
-It will show errors and describe how to fix them.
-It can also be helpful to include this command in a git hook.
-That way, branches which contain violations against the chosen standard cannot enter the repository until those
-violations have been fixed.
+O sizə səhvləri və onları necə düzəltmək lazım olduğunu göstərəcək. 
+Bu əmri git hook-a əlavə etmək də faydalı ola bilər. 
+Bu yolla, seçilmiş standart üzrə pozuntular olan branch-lar, bu pozuntular aradan qaldırılmayana qədər 
+repozitoriyaya düşə bilməyəcəklər. 
 
-If you have PHP_CodeSniffer, then you can fix the code layout problems reported by it, automatically, with the
-[PHP Code Beautifier and Fixer][phpcbf].
+Əgər sizdə PHP_CodeSniffer varsa kod üslubunda olan problemləri [PHP Code Beautifier and Fixer][phpcbf] ilə 
+avtomatik olaraq düzəldə bilərsiniz: 
 
     phpcbf -w --standard=PSR1 file.php
 
-Another option is to use the [PHP Coding Standards Fixer][phpcsfixer].
-It will show which kind of errors the code structure had before it fixed them.
+Digər bir seçim isə [PHP Coding Standards Fixer][phpcsfixer]-dən istifadə etməkdir. 
+O sizə problemləri düzətməmişdən öncə kod strukturunda hansı səhvlərin olduğunu göstərəcəkdir. 
 
     php-cs-fixer fix -v --rules=@PSR1 file.php
 
-English is preferred for all symbol names and code infrastructure. Comments may be written in any language easily
-readable by all current and future parties who may be working on the codebase.
+Bütün simvollar və kod infrastrukturu üçün ingilis dilinə üstünlük verilir. Şərhlər kod bazasə üzərində işləyən 
+hazırkı və gələcək insanlar üçün asanlıqla başa düşülə bilən istənilən dildə yazıla bilər. 
 
-Finally, a good supplementary resource for writing clean PHP code is [Clean Code PHP][cleancode].
+Və sonda, təmiz PHP kodu yazmaq üçün əlavə bir yaxşı mənbə [Clean Code PHP][cleancode]-dir. 
 
 [fig]: https://www.php-fig.org/
 [psr1]: https://www.php-fig.org/psr/psr-1/

@@ -1,17 +1,18 @@
 ---
-title:   Standard PHP Library
+title:   Standart PHP Kitabxanası
 isChild: true
 anchor:  standard_php_library
 ---
 
-## Standard PHP Library {#standard_php_library_title}
+## Standart PHP Kitabxanası {#standard_php_library_title}
 
-The Standard PHP Library (SPL) is packaged with PHP and provides a collection of classes and interfaces. It is made up
-primarily of commonly needed datastructure classes (stack, queue, heap, and so on), and iterators which can traverse
-over these datastructures or your own classes which implement SPL interfaces.
+Standart PHP Kitabxanası (Standard PHP Library - SPL) PHP ilə birlikdə gəlir və bir sıra klaslar və interfeyslər toplusunu 
+təmin edir. Əsasən çox istifadə olununan məlumat strukturu (data structures) klaslarından (stack, queue, heap və s.) və 
+bu məlumat strukturlarının üzərindən keçə bilən iterasiyalardan və ya sizin SPL interfeysini tətbiq edən şəxsi klaslarınızdan 
+ibarətdir. 
 
-* [Read about the SPL][spl]
-* [SPL video course on Lynda.com(Paid)][spllynda]
+* [SPL haqqında oxu][spl]
+* [Lynda.com-da SPL video dərsliyi (ödənişli)][spllynda]
 
 
 [spl]: https://secure.php.net/book.spl
